@@ -30,6 +30,7 @@
 * **Redis**: Acts as a message broker between the scheduler and the workers.
 * **Flower**: Tasks queues monitoring.
 * **airflow-init**: It starts everything we need in order to function and get our UI running.
+* **app**: To load the data from the Grammy CSV into the DB
 
 ## Up & running!
 Rename the ***_env_template*** to ***.env*** and update with your values.
