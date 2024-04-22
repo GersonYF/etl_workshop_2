@@ -41,6 +41,13 @@ def load(ti):
     csv_file_path = os.path.join(data_dir, 'clean_data.csv')
     df.to_csv(csv_file_path, index=False)
 
+    df.to_sql(
+        'clean_table',
+        con=engine,
+        if_exists='replace',
+        index=False,
+    )
+
     return csv_file_path
 
 
